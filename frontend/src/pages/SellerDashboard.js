@@ -991,7 +991,7 @@ const AddProductForm = ({ onSuccess, onError }) => {
       });
 
       const token = localStorage.getItem('token');
-      const res = await fetch('http://localhost:5000/api/products', {
+      const res = await fetch('https://women-entrepreneurs-platform-1zrw.vercel.app/api/products',  {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` },
         body: fd,
@@ -1354,7 +1354,7 @@ const EditProductForm = ({ product, onSuccess, onError }) => {
       });
 
       const token = localStorage.getItem('token');
-      const res = await fetch(`http://localhost:5000/api/products/${product._id}`, {
+     const res = await fetch('https://women-entrepreneurs-platform-1zrw.vercel.app/api/products',  {
         method: 'PUT',
         headers: { 'Authorization': `Bearer ${token}` },
         body: fd,

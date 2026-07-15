@@ -32,7 +32,8 @@ export const AuthProvider = ({ children }) => {
 
   const refreshUser = async () => {
   try {
-    const res = await fetch(`http://localhost:5000/api/auth/profile`, {
+    const res = await fetch(`https://women-entrepreneurs-platform-1zrw.vercel.app/api/auth/profile`, {
+
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
     });
     const data = await res.json();

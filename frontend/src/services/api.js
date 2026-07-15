@@ -1,5 +1,5 @@
-const BASE_URL = 'http://localhost:5000/api';
 
+const BASE_URL = 'https://women-entrepreneurs-platform-1zrw.vercel.app/api';
 const getToken = () => localStorage.getItem('token');
 
 const apiRequest = async (endpoint, method = 'GET', body = null) => {
